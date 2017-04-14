@@ -1,0 +1,15 @@
+//This json is return from rest service
+[
+  {
+  	"id"   : 1,
+  	"name" : "Andrew" 
+  },
+  {
+  	"id"   : 2,
+  	"name" : "Paige"
+  },
+  {
+  	"id"   : 3,
+  	"name" : "Alexander" 
+  }
+]

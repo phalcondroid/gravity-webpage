@@ -1,0 +1,14 @@
+namespace Models
+{
+  export class Person extends ModelData.AjaxModel
+  {
+    private id : number = 0;
+    private name : string = "";
+
+    public getId() { return this.id; }
+    public setId(id : number) { this.id = id; }
+
+    public getName() { return this.name; }
+    public setName(name : string) { this.name = name;}
+  }
+}

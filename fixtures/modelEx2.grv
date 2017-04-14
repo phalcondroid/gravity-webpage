@@ -1,0 +1,21 @@
+namespace Controllers
+{
+  export class IndexController extends View.Controller
+  {
+    public initialize()
+    {
+      this.em.find(
+        Person
+      ).response(function (persons) {
+
+        this.getByTag("body").append(
+          new View.Select(this).build(
+            persons,
+            ["id", "name"]
+          );
+        );
+
+      }.bind(this));
+    }
+  }
+}
