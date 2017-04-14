@@ -65,73 +65,7 @@ var Controllers;
         function IndexController() {
             _super.apply(this, arguments);
         }
-        IndexController.prototype.viewHtmlEx1 = function (tab) {
-            var pre = new View.Pre(this);
-            var code = new View.Code(this).class("typescript");
-            code.append("\n" +
-                "var spanText = new View.Span(this);\n" +
-                "spanText.class('label label-success');\n" +
-                "spanText.append('Some text')\n" +
-                "\n");
-            pre.append(code);
-            tab.html(pre);
-        };
-        IndexController.prototype.controllerEx2 = function (tab) {
-            var pre = new View.Pre(this);
-            var code = new View.Code(this).class("typescript");
-            code.append("\n" +
-                "namespace Controllers\n" +
-                "{\n" +
-                "  export class IndexController extends View.Controller\n" +
-                "  {\n" +
-                "       public divElement(element) {\n" +
-                "          var span = new View.Span(this);\n" +
-                "          span.class('label label-warning');\n" +
-                "          span.append('After text');\n" +
-                "          element.html(span);\n" +
-                "       }\n" +
-                "  }\n" +
-                "\n");
-            pre.append(code);
-            tab.html(pre);
-        };
-        IndexController.prototype.controllerEx1 = function (tab) {
-            var pre = new View.Pre(this);
-            var code = new View.Code(this).class("html");
-            code.append("\n" +
-                "<!DOCTYPE html>\n" +
-                "<html>\n" +
-                "<head>" +
-                "  <title>Example Page</title>\n" +
-                "</head>\n" +
-                "<body>\n" +
-                "  <div id='divElement'>\n" +
-                "    Text of div\n" +
-                "  </div>\n" +
-                "</body>\n" +
-                "</html>" +
-                "\n");
-            pre.append(code);
-            tab.html(pre);
-        };
-        IndexController.prototype.controllerEx3 = function (tab) {
-            var pre = new View.Pre(this);
-            var code = new View.Code(this).class("html");
-            code.append("\n" +
-                "<!DOCTYPE html>\n" +
-                "<html>\n" +
-                "<head>" +
-                "  <title>Example Page</title>\n" +
-                "</head>\n" +
-                "<body>\n" +
-                "  <div id='divElement'>\n" +
-                "    <span class='label label-warning'>After text</span>\n" +
-                "  </div>\n" +
-                "</body>\n" +
-                "</html>" +
-                "\n");
-            pre.append(code);
-            tab.html(pre);
+        IndexController.prototype.initialize = function () {
         };
         return IndexController;
     }(View.Controller));
