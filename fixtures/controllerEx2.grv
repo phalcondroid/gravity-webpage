@@ -1,0 +1,13 @@
+namespace Controllers
+{
+  export class IndexController extends View.Controller
+  {
+    public divElement(element)
+    {
+      var span = new View.Span(this);
+      span.class('label label-warning');
+      span.append('After text');
+      element.html(span);
+    }
+  }
+}

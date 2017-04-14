@@ -1,0 +1,3 @@
+var spanText = new View.Span(this);
+spanText.class("label label-success");
+spanText.append("Some text");

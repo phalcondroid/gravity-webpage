@@ -1,0 +1,16 @@
+
+namespace Views
+{
+  export class CustomSpan extends View.Span
+  {
+    public initialize()
+    {
+      this.class("label label-success");
+      this.attr({
+        "style" : "margin : 0 auto",
+        "id"    : "spanId",
+        "width" : "100%"
+      });
+    }
+  }
+}
