@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-12" style="text-align : center;">
             <h1 style="text-align : center">
-                Gravity is a Javascript MVC framework for backend developers
+                Gravity is a Javascript MVP framework for backend developers
             </h1>
             <br>
             <br>
@@ -31,13 +31,35 @@
         </div>
     </div>
 
-<!--
+    <div class="gravity-separator"></div>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">
+                    <span class="glyphicon glyphicon-globe"></span>
+                    &nbsp;
+                    CDN Download
+                </span>
+                <input type="text" 
+                    class="form-control" 
+                    placeholder="" 
+                    aria-describedby="basic-addon1"
+                    readonly 
+                    value="http://52.25.41.59/gravity-webpage/js/gravity.js">
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    
+    <div class="gravity-separator"></div>
+
     <div class="row">
         <div class="col-md-12" style="margin: 0 auto; text-aling : center;">
             {{ image("img/gravityheader.png", "class" : "center-block","style" : "width : 70%;") }}
         </div>
     </div>
--->
 
     <div class="gravity-separator"></div>
 
